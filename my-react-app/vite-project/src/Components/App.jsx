@@ -2,6 +2,7 @@ import Greeting from './Greeting.jsx'
 import List from './List.jsx';
 import UserGreeting from './UserGreeting.jsx';
 import { getImageUrl } from './Utils.jsx';
+import BookList from './Que.jsx';
 
 function Profile(props) {
   const { name, imageId, profession, awards, discovery } = props;
@@ -67,8 +68,10 @@ export default function Gallery() {
       {/* <Profile {...profile1Props} />
       <Profile {...profile2Props} /> */}
       {/* <Greeting/>
-      <UserGreeting/> */}
-      <List/>
+      {/* <UserGreeting/> */}
+      {/* <List/>  */}
+      <BookList/>
+
     </div>
   );
 }
