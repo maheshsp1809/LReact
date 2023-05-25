@@ -1,3 +1,6 @@
+import Greeting from './Greeting.jsx'
+import List from './List.jsx';
+import UserGreeting from './UserGreeting.jsx';
 import { getImageUrl } from './Utils.jsx';
 
 function Profile(props) {
@@ -61,8 +64,11 @@ export default function Gallery() {
   return (
     <div>
       <h1>Notable Scientists</h1>
-      <Profile {...profile1Props} />
-      <Profile {...profile2Props} />
+      {/* <Profile {...profile1Props} />
+      <Profile {...profile2Props} /> */}
+      {/* <Greeting/>
+      <UserGreeting/> */}
+      <List/>
     </div>
   );
 }
