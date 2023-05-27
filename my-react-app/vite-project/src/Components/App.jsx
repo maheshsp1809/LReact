@@ -4,6 +4,9 @@ import UserGreeting from './UserGreeting.jsx';
 import { getImageUrl } from './Utils.jsx';
 import BookList from './Que.jsx';
 import MyComponent from './MyComponent.jsx';
+import Counter from './Counter.jsx';
+import Input from './Input.jsx';
+
 
 function Profile(props) {
   const { name, imageId, profession, awards, discovery } = props;
@@ -65,14 +68,16 @@ export default function Gallery() {
 
   return (
     <div>
-      <h1>Notable Scientists</h1>
-      {/* <Profile {...profile1Props} />
+      {/* <h1>Notable Scientists</h1>
+      <Profile {...profile1Props} />
       <Profile {...profile2Props} /> */}
       {/* <Greeting/>
       {/* <UserGreeting/> */}
       {/* <List/>  */}
       {/* <BookList/> */}
       <MyComponent/>
+      <Counter/>
+      <Input/>
 
     </div>
   );
