@@ -6,10 +6,13 @@ import BookList from './Que.jsx';
 import MyComponent from './MyComponent.jsx';
 import Counter from './Counter.jsx';
 import Input from './Input.jsx';
+import ColorPicker from './ColorPicker.jsx';
+import TodoList from './ToDoList.jsx';
 
 
 function Profile(props) {
   const { name, imageId, profession, awards, discovery } = props;
+  
 
   return (
     <section className="profile">
@@ -65,6 +68,7 @@ export default function Gallery() {
     ],
     discovery: 'a method for measuring carbon dioxide in seawater'
   };
+  const color = '#FF0000';
 
   return (
     <div>
@@ -78,6 +82,8 @@ export default function Gallery() {
       <MyComponent/>
       <Counter/>
       <Input/>
+      <ColorPicker color={color} />
+      <TodoList/>
 
     </div>
   );
