@@ -8,6 +8,7 @@ import Counter from './Counter.jsx';
 import Input from './Input.jsx';
 import ColorPicker from './ColorPicker.jsx';
 import TodoList from './ToDoList.jsx';
+import CustomNavbar from './CustomNavBar.jsx';
 
 
 function Profile(props) {
@@ -79,11 +80,12 @@ export default function Gallery() {
       {/* <UserGreeting/> */}
       {/* <List/>  */}
       {/* <BookList/> */}
-      <MyComponent/>
+      {/* <MyComponent/>
       <Counter/>
       <Input/>
       <ColorPicker color={color} />
-      <TodoList/>
+      <TodoList/> */}
+      <CustomNavbar/>
 
     </div>
   );
