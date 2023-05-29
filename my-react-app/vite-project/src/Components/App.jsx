@@ -9,6 +9,8 @@ import Input from './Input.jsx';
 import ColorPicker from './ColorPicker.jsx';
 import TodoList from './ToDoList.jsx';
 import CustomNavbar from './CustomNavBar.jsx';
+import Product from './Product.jsx';
+import ScoreBoard from './ScoreBoard.jsx';
 
 
 function Profile(props) {
@@ -70,7 +72,18 @@ export default function Gallery() {
     discovery: 'a method for measuring carbon dioxide in seawater'
   };
   const color = '#FF0000';
+  const price='USD19'
+  const productProps = {
+    name: 'Shirt',
+    Price: '$19.99',
+    Quantity: 3
+  };
 
+  const scores=[
+    {name:'Mahesh',score:'100'},
+    {name:'Ammu', score:'95'},
+    {name:'Malinga',score:'85'}
+  ];
   return (
     <div>
       {/* <h1>Notable Scientists</h1>
@@ -86,6 +99,10 @@ export default function Gallery() {
       <ColorPicker color={color} />
       <TodoList/> */}
       <CustomNavbar/>
+      <Greeting name='Mahesh'/>
+      <Product {...productProps} />
+      <ScoreBoard scores={scores} />
+      
 
     </div>
   );
