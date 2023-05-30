@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import "./Login.css";
 
 const LoginPage = () => {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-  
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+
   const handleUsernameChange = (event) => {
     setUsername(event.target.value);
   };
@@ -15,30 +16,36 @@ const LoginPage = () => {
   const handleLogin = (event) => {
     event.preventDefault();
     // Perform login logic here
-    console.log('Username:', username);
-    console.log('Password:', password);
+    console.log("Username:", username);
+    console.log("Password:", password);
     // Reset form
-    setUsername('');
-    setPassword('');
+    setUsername("");
+    setPassword("");
   };
 
   return (
     <div>
-      <h2>Login Page</h2>
-      <form onSubmit={handleLogin}>
-        <div>
-          <label>Username:</label>
+      <div className="container">
+        <h2 className="title">Login Page</h2>
+        {/* Rest of the content */}
+      </div>
+
+      <form className="loginForm" onSubmit={handleLogin}>
+        <div className="formGroup">
+          <label htmlFor="username">Username:</label>
           <input
             type="text"
+            id="username"
             value={username}
             onChange={handleUsernameChange}
             required
           />
         </div>
-        <div>
-          <label>Password:</label>
+        <div className="formGroup">
+          <label htmlFor="password">Password:</label>
           <input
             type="password"
+            id="password"
             value={password}
             onChange={handlePasswordChange}
             required
