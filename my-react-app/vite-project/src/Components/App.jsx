@@ -11,6 +11,8 @@ import TodoList from './ToDoList.jsx';
 import CustomNavbar from './CustomNavBar.jsx';
 import Product from './Product.jsx';
 import ScoreBoard from './ScoreBoard.jsx';
+import Todos from './ToDos.jsx';
+import LoginPage from './LoginPage.jsx';
 
 
 function Profile(props) {
@@ -84,6 +86,12 @@ export default function Gallery() {
     {name:'Ammu', score:'95'},
     {name:'Malinga',score:'85'}
   ];
+  const todos=[
+    {id:'1',text:'first of list'},
+    {id:'2',text:'second of list'},
+    {id:'3',text:'third of list'}
+  ]
+  console.log('App');
   return (
     <div>
       {/* <h1>Notable Scientists</h1>
@@ -98,10 +106,12 @@ export default function Gallery() {
       <Input/>
       <ColorPicker color={color} />
       <TodoList/> */}
-      <CustomNavbar/>
+      {/* <CustomNavbar/>
       <Greeting name='Mahesh'/>
       <Product {...productProps} />
-      <ScoreBoard scores={scores} />
+      <ScoreBoard scores={scores} /> */}
+      {/* <Todos todos={todos}/> */}
+      <LoginPage/>
       
 
     </div>
