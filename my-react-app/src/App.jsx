@@ -5,6 +5,7 @@ import Gallery from "./components/Gallery"; // Import your Gallery component
 import "./App.css";
 import MyComponent from "./components/useEffectex";
 import ParentComponent from "./components/ParentComponenet";
+import Profile from "./components/Profile";
 
 export default function App() {
   useEffect(() => {
@@ -15,7 +16,8 @@ export default function App() {
       {/* <h1>My Art Gallery</h1> */}
       {/* <Gallery />  */}
       {/* <MyComponent /> */}
-      <ParentComponent />
+      {/* <ParentComponent /> */}
+      <Profile />
     </div>
   );
 }
